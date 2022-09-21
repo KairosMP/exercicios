@@ -14,8 +14,25 @@
 */
 
 @media print { /* Impressão */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
     body {
         background-image: url(../imagens/back-print.jpg);
+    }
+
+    main {
+        border: 2px solid black
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+    }
+
+    h1 {
+        text-shadow: none;
+        color: black;
     }
 
     img#phone { display: none; }
